@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Space Shooter</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Courier New', monospace;
+        }
+        #game-container {
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container"></div>
+
+    <!-- Phaser 3 from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+
+    <!-- Game Scripts -->
+    <script src="src/config.js"></script>
+    <script src="src/entities/Projectile.js"></script>
+    <script src="src/entities/Enemy.js"></script>
+    <script src="src/entities/PowerUp.js"></script>
+    <script src="src/entities/Asteroid.js"></script>
+    <script src="src/entities/Boss.js"></script>
+    <script src="src/entities/Player.js"></script>
+    <script src="src/scenes/GameScene.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
